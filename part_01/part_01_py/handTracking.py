@@ -46,8 +46,6 @@ with mp_hand.Hands(min_detection_confidence=0.5,
             cnt.ledCon(total)
             cv2.putText(image, str(total), (45, 375), cv2.FONT_HERSHEY_SIMPLEX,
                         2, (255, 0, 0), 5)
-            cv2.putText(image, "LED", (100, 375), cv2.FONT_HERSHEY_SIMPLEX,
-                        2, (255, 0, 0), 5)
 
         cv2.imshow("Frame", image)
         k = cv2.waitKey(1)
